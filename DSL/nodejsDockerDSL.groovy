@@ -16,7 +16,7 @@ job('Aplicacion Node.js Docker DSL') {
         dockerBuildAndPublish {
             repositoryName('nataelmf/nodejsapp')
             tag('${GIT_REVISION,length=7}')
-            registryCredentials('nataelmf')
+            registryCredentials('nataelmf/nodejsapp')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
